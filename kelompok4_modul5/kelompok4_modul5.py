@@ -46,4 +46,22 @@ for i in range(data):
     pajakpertaun()
     hargamobil()
     pajakperbulan()
- 
+ for i in range(data):
+    print ('')
+    print('----------------------------------------')
+    print('      Pajak penghasilan dan Mobil       ')
+    print('----------------------------------------')
+    print('Nama:',nama[i])
+    print('Harga mobil            :','Rp.',mobil[i])
+    print('Penghasilan per bulan        :','Rp.',gaji[i])
+    print('Penghasilan per tahun        :','Rp.',pertahun[i])
+    print('Pajak mobil  :','Rp.',pajakmobil[i])
+    print('Pajak penghasilan            :','2.5% x',pertahun[i],'=','Rp.',pajak[i])
+    if pertahun[i] >= mobil[i]:
+        print('Keterangan                   : WAJIB Pajak mobil Rp.',pajakmobil[i],'/tahun')
+        print('                               atau Rp. ',perbulan[i],'/bulan')
+        print('')
+    if pertahun[i] <= mobil[i]:
+        print('Keterangan                   : Anda BELUM WAJIB Pajak mobil')
+	
+
